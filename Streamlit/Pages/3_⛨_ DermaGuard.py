@@ -1,9 +1,11 @@
 
 import streamlit as st
 from PIL import Image
+from tensorflow.keras.layers import Conv2D
 from tensorflow.keras.models import load_model
 import tensorflow as tf
 import numpy as np
+
 
 # Load the models
 @st.cache_data
@@ -44,9 +46,7 @@ if uploaded_file is not None:
         model = load_model('/Users/darylwanji/Desktop/Computer_Vision_Capstone_Project/ResNet.h5')
     elif model_option == 'DenseNet':
         model = load_model('/Users/darylwanji/Desktop/Computer_Vision_Capstone_Project/DenseNet.h5')
-
-
-    # Predict
+        
     predictions = model.predict(image)
     st.write("Prediction results:")
     st.write(predictions, "O : Pigmented Bowen's Disease\n 1 : Basal Cell Carcinoma\n 2 : Benign Keratosis\n3 : Dermatofibroma\n 4 : Melanoma\n 5 : Melanocytic Nevus\n 6 : Vascular Lesion ")
