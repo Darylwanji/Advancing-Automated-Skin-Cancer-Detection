@@ -1,4 +1,4 @@
-#  Advancing Automated Skin Cancer Detection 
+#  DermaGuard: AI-Driven Precision in Skin Cancer Detection
 ## Leveraging Machine Learning for Accurate Skin Cancer Detection
 =========================
 
@@ -7,25 +7,20 @@
 The training of neural networks for the automated diagnosis of pigmented skin lesions, such as melanoma and basal cell carcinoma, is currently limited by the small size and lack of diversity in existing datasets of dermatoscopic images. Dermatoscopic images are critical for developing accurate machine-learning models that can assist in diagnosing various skin conditions. However, without a sufficiently large and diverse dataset, the neural networks may not perform well across different populations and types of lesions, leading to less reliable diagnostic tools.
 
 #### Dataset Dictionary
+# Data Dictionary
 
-HAM10000_images_part_1 and HAM10000_images_part_2:
+| Column Name              | Description                                                                                            |
+|--------------------------|--------------------------------------------------------------------------------------------------------|
+| lesion_id                | Unique identifier for the lesion.                                                                      |
+| image_id                 | Unique identifier for the image.                                                                       |
+| Diagnosis                | Diagnosis code of the lesion (e.g., bkl for benign keratosis-like lesions, mel for melanoma, nv for melanocytic nevus). |
+| Confirmation_Method      | Method used to confirm the diagnosis, e.g., histo (histology) or follow_up.                            |
+| Age                      | Age of the patient.                                                                                    |
+| Sex                      | Sex of the patient.                                                                                    |
+| Location                 | Anatomical location of the lesion on the body.                                                         |
+| Image_path               | File path to the image.                                                                                |
+| Updated_Diagnosis_Label  | Updated label for the diagnosis, used for additional categorization or correction.                     |
 
-These datasets contain the actual dermatoscopic images of skin lesions. They are typically stored as image files (e.g., JPEG, PNG) and are used for training and testing machine learning models for skin lesion diagnosis and segmentation.
-
-HAM10000_metadata.csv:
-
-This CSV file contains metadata associated with the HAM10000 dataset. Metadata usually includes information such as lesion ID, diagnosis (e.g., melanoma, nevus), patient characteristics (e.g., age, sex), and diagnostic method (e.g., histopathology, expert consensus). It serves as a key reference for linking image data to clinical and diagnostic details.
-hmnist_28_28_L.csv:
-
-This CSV file contains a subset of the HAM10000 dataset where each entry represents a 28x28 grayscale image of a skin lesion. Each pixel value is typically represented as an integer between 0 and 255, indicating the grayscale intensity.
-
-hmnist_28_28_RGB.csv:
-
-Similar to hmnist_28_28_L.csv, this CSV file contains a subset of the HAM10000 dataset but with each entry representing a 28x28 RGB (color) image of a skin lesion. Each pixel is represented by three values (Red, Green, Blue) indicating the color intensity.
-
-hmnist_8_8_L.csv and hmnist_8_8_RGB.csv:
-
-These CSV files contain another subset of the HAM10000 dataset but with images reduced to 8x8 resolution. hmnist_8_8_L.csv contains grayscale images, while hmnist_8_8_RGB.csv contains RGB images.
 
 ### Demo
  
