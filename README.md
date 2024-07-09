@@ -22,8 +22,19 @@ The training of neural networks for the automated diagnosis of pigmented skin le
 
 
 ### Demo
- 
- TBA
+
+ To experience the application:
+
+1. **Run the Streamlit App:**   
+   `streamlit run 1_🏠_Homepage.py `    
+   ![Run streamlit](/Users/darylwanji/Desktop/Computer_Vision_Capstone_Project/Advancing-Automated-Skin-Cancer-Detection/Assets/Other/runstream.png)
+2. **Navigation Steps:**
+- Navigate through the different pages and go to the **DermaGuard** page.
+
+1. **Usage Steps:**
+- On the DermaGuard page, upload a lesion picture.
+- Select a model: **DenseNet** or **ResNet**.
+- View the classification result.
 
 
 ### Methodology
