@@ -33,8 +33,9 @@ TBA
 ### Organization
 
 #### Repository 
+```md
 Project Directory/
-├── Advancing Automated Skin Cancer Detection/
+├── <span style="color: blue;">Advancing Automated Skin Cancer Detection/</span>n/
 │   ├── Assets/
 │   │   └── # Contains project's assets (Graphs, Pictures, etc.)
 │   ├── Docs/
@@ -56,10 +57,11 @@ Project Directory/
 │   └── # `h5` dump of final model(s)
 └── .gitignore
     └── # Part of Git, includes files and folders to be ignored by Git version control
-
-
-
+```
 #### Dataset
+
+The dataset is too large to be included in the project. However, you can access and download it from the following link.
+
 [https://archive.ics.uci.edu/dataset/229/skin+segmentation
 Bhatt,Rajen and Dhall,Abhinav. (2012). Skin Segmentation. UCI Machine Learning Repository. https://doi.org/10.24432/C5T30C.](https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000?resource=download&select=HAM10000_metadata.csv)
 
