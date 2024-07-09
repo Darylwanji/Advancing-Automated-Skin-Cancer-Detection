@@ -90,7 +90,7 @@ By employing both DenseNet121 and ResNet50, the project aims to leverage the str
 2. **Navigation Steps:**
 - Navigate through the different pages and go to the **DermaGuard** page.
 
-1. **Usage Steps:**
+3. **Usage Steps:**
 - On the DermaGuard page, upload a lesion picture.      
      
   ![DermaGuard](https://github.com/Darylwanji/Advancing-Automated-Skin-Cancer-Detection/blob/main/Assets/Other/Derma.png?raw%3Dtrue)
