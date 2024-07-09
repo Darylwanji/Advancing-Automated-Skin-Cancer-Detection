@@ -45,7 +45,7 @@ if uploaded_file is not None:
     if model_option == 'ResNet':
         model = load_model('/Users/darylwanji/Desktop/Computer_Vision_Capstone_Project/ResNet.h5')
     elif model_option == 'DenseNet':
-        model = load_model('/Users/darylwanji/Desktop/Computer_Vision_Capstone_Project/DenseNet.h5')
+        model = load_model('/Users/darylwanji/Desktop/Computer_Vision_Capstone_Project/ResNet.h5')
         
     predictions = model.predict(image)
     st.write("Prediction results:")
