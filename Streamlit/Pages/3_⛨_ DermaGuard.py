@@ -6,7 +6,15 @@ from tensorflow.keras.models import load_model
 import tensorflow as tf
 import numpy as np
 
-
+labels_dict = {
+    0: "Pigmented Bowen's Disease",
+    1: "Basal Cell Carcinoma",
+    2: "Benign Keratosis",
+    3: "Dermatofibroma",
+    4: "Melanoma",
+    5: "Melanocytic Nevus",
+    6: "Vascular Lesion"
+}
 # Load the models
 @st.cache_data
 def load_model(file_path):
@@ -47,6 +55,11 @@ if uploaded_file is not None:
     elif model_option == 'DenseNet':
         model = load_model('/Users/darylwanji/Desktop/Computer_Vision_Capstone_Project/ResNet.h5')
         
-    predictions = model.predict(image)
-    st.write("Prediction results:")
-    st.write(predictions, "O : Pigmented Bowen's Disease\n 1 : Basal Cell Carcinoma\n 2 : Benign Keratosis\n3 : Dermatofibroma\n 4 : Melanoma\n 5 : Melanocytic Nevus\n 6 : Vascular Lesion ")
+    predictions = model.predict(image)[0]
+
+     # Get the highest prediction
+    max_index = np.argmax(predictions)
+    max_label = labels_dict[max_index]
+    max_prob = predictions[max_index]
+
+    st.write(f"The model predicts the lesion to be **{max_label}** with a probability of **{max_prob:.2%}**")
