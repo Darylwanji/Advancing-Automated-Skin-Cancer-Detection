@@ -33,37 +33,29 @@ TBA
 ### Organization
 
 #### Repository 
-
-* `data` 
-    - contains link to copy of the dataset (stored in a publicly accessible cloud storage)
-    - saved copy of aggregated / processed data as long as those are not too large (> 10 MB)
-
-* `model`
-    - `joblib` dump of final model(s)
-
-* `notebooks`
-    - contains all final notebooks involved in the project
-
-* `docs`
-    - contains final report, presentations which summarize the project
-
-* `references`
-    - contains papers / tutorials used in the project
-
-* `src`
-    - Contains the project source code (refactored from the notebooks)
-
-* `.gitignore`
-    - Part of Git, includes files and folders to be ignored by Git version control
-
-* `conda.yml`
-    - Conda environment specification
-
-* `README.md`
-    - Project landing page (this page)
-
-* `LICENSE`
-    - Project license
+Project Directory/
+├── Advancing Automated Skin Cancer Detection/
+│   ├── Assets/
+│   │   └── # Contains project's assets (Graphs, Pictures, etc.)
+│   ├── Docs/
+│   │   └── # Contains final report, presentations which summarize the project
+│   ├── Notebooks/
+│   │   └── # Contains all final notebooks involved in the project
+│   ├── References/
+│   │   └── # Contains papers/tutorials used in the project
+│   ├── Streamlit/
+│   │   └── # Streamlit App files
+│   ├── README.md
+│   │   └── # Project landing page (this page)
+│   └── LICENSE
+│       └── # Project license
+├── data/
+│   ├── # Contains link to copy of the dataset (stored locally as it is over 5GB)
+│   └── # Saved copy of aggregated/processed data as long as those are not too large (> 10MB)
+├── model/
+│   └── # `h5` dump of final model(s)
+└── .gitignore
+    └── # Part of Git, includes files and folders to be ignored by Git version control
 
 #### Dataset
 [https://archive.ics.uci.edu/dataset/229/skin+segmentation
