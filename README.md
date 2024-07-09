@@ -6,7 +6,6 @@
 
 The training of neural networks for the automated diagnosis of pigmented skin lesions, such as melanoma and basal cell carcinoma, is currently limited by the small size and lack of diversity in existing datasets of dermatoscopic images. Dermatoscopic images are critical for developing accurate machine-learning models that can assist in diagnosing various skin conditions. However, without a sufficiently large and diverse dataset, the neural networks may not perform well across different populations and types of lesions, leading to less reliable diagnostic tools.
 
-#### Dataset Dictionary
 # Data Dictionary
 
 | Column Name              | Description                                                                                            |
