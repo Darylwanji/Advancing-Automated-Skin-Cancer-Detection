@@ -58,6 +58,7 @@ Project Directory/
     └── # Part of Git, includes files and folders to be ignored by Git version control
 
 
+
 #### Dataset
 [https://archive.ics.uci.edu/dataset/229/skin+segmentation
 Bhatt,Rajen and Dhall,Abhinav. (2012). Skin Segmentation. UCI Machine Learning Repository. https://doi.org/10.24432/C5T30C.](https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000?resource=download&select=HAM10000_metadata.csv)
