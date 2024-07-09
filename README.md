@@ -27,7 +27,7 @@ The training of neural networks for the automated diagnosis of pigmented skin le
 
 1. **Run the Streamlit App:**   
    `streamlit run 1_🏠_Homepage.py `     
-      
+
    ![Sample run](https://github.com/Darylwanji/Advancing-Automated-Skin-Cancer-Detection/blob/main/Assets/Other/runstream.png?raw%3Dtrue)
 
 2. **Navigation Steps:**
@@ -39,7 +39,10 @@ The training of neural networks for the automated diagnosis of pigmented skin le
   ![DermaGuard](https://github.com/Darylwanji/Advancing-Automated-Skin-Cancer-Detection/blob/main/Assets/Other/Derma.png?raw%3Dtrue)
 
 
-- Select a model: **DenseNet** or **ResNet**.
+- Select a model: **DenseNet** or **ResNet**.   
+
+    ![Model Selection](https://github.com/Darylwanji/Advancing-Automated-Skin-Cancer-Detection/blob/main/Assets/Other/Model.png?raw%3Dtrue)
+
 - View the classification result.
 
 
