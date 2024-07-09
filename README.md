@@ -33,14 +33,14 @@ TBA
 ### Organization
 
 #### Repository 
-Project Directory/
-├── Advancing Automated Skin Cancer Detection/
-│   ├── Assets/
-│   │   └── # Contains project's assets (Graphs, Pictures, etc.)
-│   ├── Docs/
-│   │   └── # Contains final report, presentations which summarize the project
-│   ├── Notebooks/
-│   │   └── # Contains all final notebooks involved in the project
+Project Directory/      
+├── Advancing Automated Skin Cancer Detection/      
+│   ├── Assets/     
+│   │   └── # Contains project's assets (Graphs, Pictures, etc.)        
+│   ├── Docs/       
+│   │   └── # Contains final report, presentations which summarize the project      
+│   ├── Notebooks/      
+│   │   └── # Contains all final notebooks involved in the project      
 │   ├── References/
 │   │   └── # Contains papers/tutorials used in the project
 │   ├── Streamlit/
