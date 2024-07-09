@@ -28,14 +28,38 @@ The training of neural networks for the automated diagnosis of pigmented skin le
 
 ### Methodology
 
-TBA 
+##### Data Collection and Preprocessing
+The dataset used in this project consists of high-resolution images of skin cancer lesions. The images were obtained from Kaggle, and is a publicly available dataset. Each image was labeled with the corresponding type of skin lesion.
+
+Before training, the images were preprocessed as follows:
+
+Resizing: All images were resized to a standard dimension of 224x224 pixels to match the input size required by DenseNet121 and ResNet50.
+
+Normalization: Pixel values were scaled to the range [0, 1] for consistency and to facilitate model convergence.
+
+Augmentation: Data augmentation techniques, such as rotation, flipping, and zooming, were applied to increase the diversity of the training set and reduce overfitting.
+
+##### Model Selection
+Two convolutional neural network architectures, DenseNet121 and ResNet50, were selected for this project due to their proven effectiveness in image classification tasks.
+
+DenseNet121: DenseNet121 is known for its dense connectivity pattern, where each layer receives input from all preceding layers. This promotes feature reuse and mitigates the vanishing gradient problem, leading to efficient training.
+
+ResNet50: ResNet50, a 50-layer deep residual network, utilizes skip connections or shortcuts to jump over some layers. This architecture helps in training very deep networks by preventing the vanishing gradient problem and ensuring that the network learns effectively.
+
+##### Training Procedure
+Initialization: Both DenseNet121 and ResNet50 models were initialized with pre-trained weights from the ImageNet dataset. This transfer learning approach leverages pre-learned features, enabling faster convergence and better performance, especially when dealing with limited data.
+
+##### Implementation
+The models were implemented using TensorFlow and Keras libraries. The training was conducted on a GPU-enabled environment to expedite the process.
+
+By employing both DenseNet121 and ResNet50, the project aims to leverage the strengths of each architecture to achieve high accuracy in classifying skin cancer lesions, thereby aiding in early and accurate diagnosis.
 
 ### Organization
 
 #### Repository 
 ```md
 Project Directory/
-├── <span style="color: blue;">Advancing Automated Skin Cancer Detection/</span>n/
+├── Advancing Automated Skin Cancer Detection/  # Version controlled
 │   ├── Assets/
 │   │   └── # Contains project's assets (Graphs, Pictures, etc.)
 │   ├── Docs/
@@ -67,4 +91,6 @@ Bhatt,Rajen and Dhall,Abhinav. (2012). Skin Segmentation. UCI Machine Learning R
 
 ### Credits & References
 
-TBA
+> DenseNet : https://www.kaggle.com/code/angelarentsi/skin-disease-classification-densenet#DenseNet121  
+> ResNet : Brainstation Class material
+
