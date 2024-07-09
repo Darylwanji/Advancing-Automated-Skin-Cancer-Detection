@@ -20,31 +20,34 @@ The training of neural networks for the automated diagnosis of pigmented skin le
 | Image_path               | File path to the image.                                                                                |
 | Updated_Diagnosis_Label  | Updated label for the diagnosis, used for additional categorization or correction.                     |
 
+### Organization
 
-### Demo
-
- To experience the application:
-
-1. **Run the Streamlit App:**   
-   `streamlit run 1_🏠_Homepage.py `     
-
-   ![Sample run](https://github.com/Darylwanji/Advancing-Automated-Skin-Cancer-Detection/blob/main/Assets/Other/runstream.png?raw%3Dtrue)
-
-2. **Navigation Steps:**
-- Navigate through the different pages and go to the **DermaGuard** page.
-
-1. **Usage Steps:**
-- On the DermaGuard page, upload a lesion picture.      
-     
-  ![DermaGuard](https://github.com/Darylwanji/Advancing-Automated-Skin-Cancer-Detection/blob/main/Assets/Other/Derma.png?raw%3Dtrue)
-
-
-- Select a model: **DenseNet** or **ResNet**.   
-
-    ![Model Selection](https://github.com/Darylwanji/Advancing-Automated-Skin-Cancer-Detection/blob/main/Assets/Other/Model.png?raw%3Dtrue)
-
-- View the classification result.
-
+#### Repository 
+```md
+Project Directory/
+├── Advancing Automated Skin Cancer Detection/  # Version controlled
+│   ├── Assets/
+│   │   └── # Contains project's assets (Graphs, Pictures, etc.)
+│   ├── Docs/
+│   │   └── # Contains final report, presentations which summarize the project
+│   ├── Notebooks/
+│   │   └── # Contains all final notebooks involved in the project
+│   ├── References/
+│   │   └── # Contains papers/tutorials used in the project
+│   ├── Streamlit/
+│   │   └── # Streamlit App files
+│   ├── README.md
+│   │   └── # Project landing page (this page)
+│   └── LICENSE
+│       └── # Project license
+├── data/
+│   ├── # Contains link to copy of the dataset (stored locally as it is over 5GB)
+│   └── # Saved copy of aggregated/processed data as long as those are not too large (> 10MB)
+├── model/
+│   └── # `h5` dump of final model(s)
+└── .gitignore
+    └── # Part of Git, includes files and folders to be ignored by Git version control
+```
 
 ### Methodology
 
@@ -74,34 +77,31 @@ The models were implemented using TensorFlow and Keras libraries. The training w
 
 By employing both DenseNet121 and ResNet50, the project aims to leverage the strengths of each architecture to achieve high accuracy in classifying skin cancer lesions, thereby aiding in early and accurate diagnosis.
 
-### Organization
 
-#### Repository 
-```md
-Project Directory/
-├── Advancing Automated Skin Cancer Detection/  # Version controlled
-│   ├── Assets/
-│   │   └── # Contains project's assets (Graphs, Pictures, etc.)
-│   ├── Docs/
-│   │   └── # Contains final report, presentations which summarize the project
-│   ├── Notebooks/
-│   │   └── # Contains all final notebooks involved in the project
-│   ├── References/
-│   │   └── # Contains papers/tutorials used in the project
-│   ├── Streamlit/
-│   │   └── # Streamlit App files
-│   ├── README.md
-│   │   └── # Project landing page (this page)
-│   └── LICENSE
-│       └── # Project license
-├── data/
-│   ├── # Contains link to copy of the dataset (stored locally as it is over 5GB)
-│   └── # Saved copy of aggregated/processed data as long as those are not too large (> 10MB)
-├── model/
-│   └── # `h5` dump of final model(s)
-└── .gitignore
-    └── # Part of Git, includes files and folders to be ignored by Git version control
-```
+### Demo
+
+ To experience the application:
+
+1. **Run the Streamlit App:**   
+   `streamlit run 1_🏠_Homepage.py `     
+
+   ![Sample run](https://github.com/Darylwanji/Advancing-Automated-Skin-Cancer-Detection/blob/main/Assets/Other/runstream.png?raw%3Dtrue)
+
+2. **Navigation Steps:**
+- Navigate through the different pages and go to the **DermaGuard** page.
+
+1. **Usage Steps:**
+- On the DermaGuard page, upload a lesion picture.      
+     
+  ![DermaGuard](https://github.com/Darylwanji/Advancing-Automated-Skin-Cancer-Detection/blob/main/Assets/Other/Derma.png?raw%3Dtrue)
+
+
+- Select a model: **DenseNet** or **ResNet**.   
+
+    ![Model Selection](https://github.com/Darylwanji/Advancing-Automated-Skin-Cancer-Detection/blob/main/Assets/Other/Model.png?raw%3Dtrue)
+
+- View the classification result.
+
 #### Dataset
 
 The dataset is too large to be included in the project. However, you can access and download it from the following link.
